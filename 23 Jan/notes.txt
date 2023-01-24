@@ -1,0 +1,43 @@
+Sameer Jaker Huseni
+just now
+Debouncing
+
+Hifzur Rehman
+just now
+Prototype
+
+Ankit Agrawal
+just now
+prototype
+
+Ankit Agrawal
+just now
+prototype inheritance
+
+MD Raufur Rahman
+just now
+Inheritance
+
+Mohd Isham
+just now
+DOM
+
+Sachin Sharma
+just now
+memory allocation
+
+what is difference between function prototype and object prototype ?
+
+and what does does it means everything in js is object?
+
+let vs var
+
+Array : Collection of homogeneous type of data, represented by []
+Objects : Collection of hetrogeneous type of data which togehter repesents a single entity, represented by {}
+
+Higher Order Fn : A function which takes another fn as an argument.
+OR
+A function which return another function 
+
+
+A function which we pass as parameter to a HOF is called as callback function.
