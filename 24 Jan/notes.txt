@@ -1,0 +1,9 @@
+Prototype is an object in JS which stores the key value pairs which are the methods/function available to one particular type
+
+
+Inhertiance
+Encapsulation
+Abstraction
+Polymorhism
+
+DOM : Document Object Model
