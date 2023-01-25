@@ -2,9 +2,6 @@ Sameer Jaker Huseni
 just now
 Debouncing
 
-Mohd Isham
-just now
-DOM
 
 Array : Collection of homogeneous type of data, represented by []
 Objects : Collection of hetrogeneous type of data which togehter repesents a single entity, represented by {}

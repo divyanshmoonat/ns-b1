@@ -1,0 +1,20 @@
+Events? Interaction happening within a system.
+E.g Click of mouse, Key press, DOM ready, Page reload etc
+https://developer.mozilla.org/en-US/docs/Web/Events#event_listing
+
+BOM (Browser Object Model) => window
+DOM => document
+
+Array of Objects/ Object of arrays/ Arrays/Objects => JSON (JavaScript Object Notation)
+
+Sync : Java, C# etc
+Async : JS
+
+AJAX => Asynchrounous JavaScript And XML
+XML : Xtensible Markup Language
+
+REST API => Representational State Transfer Application Programming Interface => API
+
+
+XHR (XMLHttpRequest)
+
