@@ -1,0 +1,12 @@
+Mixin : It is considered as inheritane in JS, which can be used without the use of extends keyword
+
+Add a function to a class without modifying its code
+
+ES6 Getter and Setter
+getter and setter are the ways to retrieve and update the properties of a class, where the functions acts as a property name
+
+Object => Key-Value pairs & Prototype
+    Key-Value
+        Key-Value => Meta deta (Descriptor) getOwnPropertyDescriptor
+
+defineProperty();
