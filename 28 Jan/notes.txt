@@ -1,0 +1,16 @@
+OOP (Object Oriented Programming)
+
+Class : Collection of variables and function which represents a single unit
+Collection of data memnbers and member functions.
+
+1. Encapsulation : Wrapping the data(variables/functions) into a single unit.
+2. Inheritance : Transferring the properties of parent to its child.
+    Single
+    Multi level
+    Hierarchical
+    Hybrid
+3. Abstraction : Hide the implementation details and show only the necessary details to the user.
+ABSTRACTION CAN ONLY BE PREFORMED ON A FEATURE
+4. Polymorphism
+
+this => Keyword which represents current context
