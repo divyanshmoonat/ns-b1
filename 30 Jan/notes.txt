@@ -1,0 +1,15 @@
+Promises => Async operations
+States of Promise : 
+1. Pending : Default state
+2. Fulfilled : If the promise is resolved without any error
+3. Rejected : If the promise encounters any error it is rejected
+
+
+APIs:
+1. URL (EndPoint) : https://jsonplaceholder.typicode.com/todos/
+2. Method (GET,POST,PUT,PATCH,DELETE etc)
+
+
+1. Call an API
+2. Get the data
+3. Show the data received from the API on the UI (Screen)
