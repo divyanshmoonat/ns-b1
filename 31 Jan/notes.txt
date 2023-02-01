@@ -1,0 +1,6 @@
+When we implement protoypal inheritance, an object inherits the prototype as well as constructor.
+
+Object vs Map
+Object : Stores the k-v pairs but doesn't maintains the order;
+Map    : Stores the k-v pairs and         maintains the order;
+
