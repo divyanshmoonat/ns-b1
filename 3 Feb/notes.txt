@@ -1,0 +1,11 @@
+Debouncing: Mechanism to reduce server calls (API calls) by managing the keypress within a very short duration
+
+E.g Wait for 1 second between 2 key press and then call the API
+
+using debugger in browser
+
+git project section
+
+some git bashcommand
+
+event handling
