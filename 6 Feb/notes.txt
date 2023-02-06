@@ -1,0 +1,10 @@
+Axios? Library used to make REST API calls in an efficient manner.
+Steps to use any Library in JS
+1. Import its CDN ie script tag with a js file
+2. Call the function by reading the documentation
+
+https://axios-http.com/docs/intro
+
+
+Currying : Works with the help of HOF(Higher Order Functions) and Closures.
+It is useful when you have to call a function n times with almost same parameters, with change in a single or two parameters.
