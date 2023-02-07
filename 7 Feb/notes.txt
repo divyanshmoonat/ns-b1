@@ -1,0 +1,5 @@
+Call Stack : It is a place in browser where the currently executing functions are kept on top of each other based on their order of execution.
+Web API : It is a storage where the async operations are kept after removing them from call stack.
+
+
+Call, bind and apply : Used to bind the values of an object to a function.
