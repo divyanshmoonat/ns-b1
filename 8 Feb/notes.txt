@@ -1,0 +1,22 @@
+React? It is a JS library developed by Meta(Facebook)
+It is used to devleop single page applications (SPA)
+React vs Angular
+Very fast
+Light Weight
+Easy to learn
+
+
+Pre requsits : 
+1. NodeJS : Runtime environment to run React JS.
+2. Code Editor : VS Code, Sublime, InteliJ etc
+
+
+npmjs.com => It is a play store for JS
+JS Libraries =>App/Application 
+
+NPM => Node Package Manager
+CLI => Command Line Interface
+
+
+package.json => A file which stores all the libraries name and version number downloaded from npmjs.com and it also contains npm script (to start the application, to build the application, to test application
+ etc)
