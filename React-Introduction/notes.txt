@@ -1,0 +1,22 @@
+NEVER MESS UP WITH node_modules FOLDER, IT MAY STOP YOUR APPLICATION ABRUPTLY AND YOU MAY SEE ERRORS
+
+NPM Scripts : These are some commands written to perform specific action in your application e.g starting the app etc in package.json
+
+While sharing the code of an NPM Based project e.g React Project, we never share or push "node_modules" folder.
+
+
+npm package installation with specific version : npm i <package-name>@<package-version>
+
+Export-Import
+CJS : Common JS
+ES  : EcmaScript
+
+Browser DOM/Actual DOM : An object/tree which represents the HTML structure.
+
+Virtual DOM : It is a binary tree which is a copy of actual DOM
+
+How does react updates any node?
+Using diffing algorithm
+"Reconsiliation" : The whole process followed by react to update a node using Virtual DOM.
+
+"Babel": It is a transpiler
