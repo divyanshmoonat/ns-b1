@@ -1,0 +1,24 @@
+In React every component always returns an HTML structure.
+For every component to show on UI, you have to write the name of the function in pascal case ie Start with a Captial letter eg App, Header etc
+
+Any class of function which returns HTML structure is called a component.
+
+My function redefined
+
+myFunctionRedefined => Camel Case
+
+MyFunctionRedefined => Pascal Case
+
+my_function_redefined => Snake Case
+
+
+<div class="article"></div> => HTML version
+<div className="article"></div> => React version
+
+React doesn't allows a tag to remain open even not an empty tag.
+
+If it is a component, for every js file we'll write a CSS file.
+
+JSX (JavaScript and XML)
+
+Webpack : Module bundler (bundle.js)
