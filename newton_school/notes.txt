@@ -22,3 +22,44 @@ If it is a component, for every js file we'll write a CSS file.
 JSX (JavaScript and XML)
 
 Webpack : Module bundler (bundle.js)
+
+https://babeljs.io/
+https://webpack.js.org/
+
+"AVOID RUNNING eject COMMAND"
+
+
+Imperative Way: This way says write and how every thing step by step in the code.
+Declarative Way: This way says focus on the output rather than shownig things step by step.
+
+// const arr = [3, 1, 2, 76, 3, 65];
+// Imperative way
+// let max = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+// Declarative way
+// console.log(Mat=h.max.apply(this, arr));
+
+
+--------------------------------------------------------------
+12 Feb 2023 : 
+
+Component : Any reusable unit (block of code) in React JS.
+2 types : 
+1. Class based compoennts
+2. Function component
+
+React components have 2 type of extension with their file : js and jsx.
+
+Props (Properties) : Arguments which are passed to a component (function/class based).
+Conditional Rendering : Showing UI based on some basic conditions
+
+Anything other than plain text should be written in side {} in JSX.
+
+====VVV IMPORTANTA====
+Key : It is a UNIQUE VALUE associated with every DOM Node which react used to identify the node.

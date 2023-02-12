@@ -1,16 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Greet from "./components/Greet/Greet";
 
-function App() {
-  const name = "Peter";
+const App = () => {
+  const users = [
+    { fName: "John", lName: "Doe", age: 10 },
+    { fName: "Ram", lName: "Prasad", age: 15 },
+    { fName: "Peter", lName: "Parker", age: 22 },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        Hello {name} this is my first react application
-      </header>
+      {users.map((user) => (
+        <Greet key={user.fName} {...user} />
+      ))}
     </div>
   );
-}
+};
 
 export default App;
