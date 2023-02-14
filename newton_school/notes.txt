@@ -63,3 +63,12 @@ Anything other than plain text should be written in side {} in JSX.
 
 ====VVV IMPORTANTA====
 Key : It is a UNIQUE VALUE associated with every DOM Node which react used to identify the node.
+
+Hexa decimal number system : 0-9 A-F
+6 digits => #XXXXXX
+#RRGGBB
+#FF0000 => Red
+#00FF00 => Green
+#0000FF => Blue
+#000000 => Black
+#ffffff => White
