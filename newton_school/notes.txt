@@ -72,3 +72,25 @@ Hexa decimal number system : 0-9 A-F
 #0000FF => Blue
 #000000 => Black
 #ffffff => White
+==============================
+15 Feb 2023
+
+hooks
+
+useState();
+let [getterVarName, setterFnName] = useState(<initial-value>);
+
+let price = 0;
+let total = 100 + 50;
+let [price,setPrice] = useState(0);
+setPrice(total);
+
+let users = [];
+users = [...users,"new item"];
+let [users,setUsers] = useState([]);
+setUsers([...users, "new item"])
+
+let fName = "";
+fName = "John";
+let [fName, setFName] = useState("");
+setFName("John");

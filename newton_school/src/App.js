@@ -1,6 +1,7 @@
 import "./App.css";
 import Greet from "./components/Greet/Greet";
 import Header from "./components/Header/Header";
+import ToDoList from "./components/ToDoList/ToDoList";
 
 const App = () => {
   const users = [
@@ -12,13 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <ul>
-      {users.map((user,index) => (
-        // <Greet key={user.fName} {...user} />
-        <li key={"location"+index+1}>{user.fName}</li>
-      ))}
-
-      </ul>
+      <ToDoList />
     </div>
   );
 };
