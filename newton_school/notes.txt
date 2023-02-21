@@ -94,3 +94,12 @@ let fName = "";
 fName = "John";
 let [fName, setFName] = useState("");
 setFName("John");
+
+----------------------------------------------------
+21 Feb 2023
+By passing function as a prop : 
+
+1. Capture the user input in Events component
+2. Pass the user input to App component
+3. Event will store it into state variable
+4. Re-render

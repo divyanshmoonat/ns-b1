@@ -21,11 +21,15 @@ const Header = () => {
       </header>
     );
   } else {
+    const percent = 45;
+    const aStyles = { color: percent < 50 ? "red" : "green" };
     return (
       <header>
         <nav className="site-nav">
           <div>
-            <a href="#">Home</a>
+            <a style={aStyles} href="#">
+              Home
+            </a>
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
           </div>

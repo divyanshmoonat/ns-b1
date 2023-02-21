@@ -1,19 +1,39 @@
+import { useState } from "react";
+import styled from "styled-components";
+
 import "./App.css";
+
 import Greet from "./components/Greet/Greet";
 import Header from "./components/Header/Header";
 import ToDoList from "./components/ToDoList/ToDoList";
+import Events from "./components/Events/Events";
 
 const App = () => {
-  const users = [
-    { fName: "John", lName: "Doe", age: 10 },
-    { fName: "Ram", lName: "Prasad", age: 15 },
-    { fName: "Peter", lName: "Parker", age: 22 },
-  ];
+  // const percent = 60;
+
+  const Heading = styled.h1`
+    color: ${(props) => (props.percent > 50 ? "green" : "red")};
+    font-size: 25px;
+  `;
+
+  const Heading2 = styled.h1`
+    color: blue;
+  `;
+
+  const [heading, setHeading] = useState("");
+  const onHeadingChange = (value) => {
+    // Update heading state variable
+    setHeading(value);
+  };
 
   return (
     <div className="App">
       <Header />
-      <ToDoList />
+      {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
+      <Heading percent={60}>Heading from Styled Component</Heading>
+      <Heading2>{heading}</Heading2>
+      <Events onHeadingChange={onHeadingChange} />
+      {/* <ToDoList /> */}
     </div>
   );
 };
