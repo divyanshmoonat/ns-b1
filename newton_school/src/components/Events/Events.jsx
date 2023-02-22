@@ -1,9 +1,9 @@
 import { useState } from "react";
-
+import PropTypes from "prop-types";
 import "./Events.css";
 
 const Events = (props) => {
-  console.log(props);
+  console.log(props.title);
 
   // const [heading, setHeading] = useState("");
   const [color, setColor] = useState("");
@@ -27,4 +27,19 @@ const Events = (props) => {
     </div>
   );
 };
+
+Events.propTypes = {
+  onHeadingChange: PropTypes.func.isRequired,
+  name: PropTypes.string,
+  title: PropTypes.string,
+  event: PropTypes.shape({
+    type: PropTypes.string,
+    hardware: PropTypes.string,
+  }),
+};
+
+Events.defaultProps = {
+  title: "ABCD",
+};
+
 export default Events;

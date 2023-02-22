@@ -103,3 +103,10 @@ By passing function as a prop :
 2. Pass the user input to App component
 3. Event will store it into state variable
 4. Re-render
+----------------------------------------------------
+22 Feb 2023
+
+Lifecyle Phases in React :
+1. Mounting : First render with initial computations
+2. Updation : Every re render
+3. Unmounting : When component wipes out from the DOM

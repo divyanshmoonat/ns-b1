@@ -7,6 +7,7 @@ import Greet from "./components/Greet/Greet";
 import Header from "./components/Header/Header";
 import ToDoList from "./components/ToDoList/ToDoList";
 import Events from "./components/Events/Events";
+import Register from "./components/Register/Register";
 
 const App = () => {
   // const percent = 60;
@@ -32,7 +33,15 @@ const App = () => {
       {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
       <Heading percent={60}>Heading from Styled Component</Heading>
       <Heading2>{heading}</Heading2>
-      <Events onHeadingChange={onHeadingChange} />
+      <Register />
+      {/* <Events
+        event={{
+          hardware: "mouse",
+          type: "click",
+        }}
+        onHeadingChange={onHeadingChange}
+        name={"click"}
+      /> */}
       {/* <ToDoList /> */}
     </div>
   );
