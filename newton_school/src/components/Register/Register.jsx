@@ -11,29 +11,12 @@ const Register = () => {
     password: "",
   });
 
-  const onFullNameChange = (event) => {
-    // setFullName(event.target.value);
-    // setState();
-    // setState.fullName = ""; // Wrong
-    // setState({ fullName: event.target.value }); // Wrong
+  const onInputChange = (event) => {
+    const key = event.target.name;
+    const value = event.target.value;
     setState({
       ...state,
-      fullName: event.target.value,
-    });
-  };
-  const onEmailChange = (event) => {
-    // setEmail(event.target.value);
-    // setState({ email: event.target.value }); // Wrong
-    setState({
-      ...state,
-      email: event.target.value,
-    });
-  };
-  const onPasswordChange = (event) => {
-    // setPassword(event.target.value);
-    setState({
-      ...state,
-      password: event.target.value,
+      [key]: value, // Dynamic key
     });
   };
 
@@ -43,17 +26,27 @@ const Register = () => {
       <form>
         <div>
           <label htmlFor="fullName">Full Name</label>
-          <input id="fullName" onChange={onFullNameChange} />
+          <input name="fullName" id="fullName" onChange={onInputChange} />
         </div>
 
         <div>
           <label htmlFor="email">Email</label>
-          <input id="email" type={"email"} onChange={onEmailChange} />
+          <input
+            name="email"
+            id="email"
+            type={"email"}
+            onChange={onInputChange}
+          />
         </div>
 
         <div>
           <label htmlFor="password">Password</label>
-          <input id="password" type={"password"} onChange={onPasswordChange} />
+          <input
+            name="password"
+            id="password"
+            type={"password"}
+            onChange={onInputChange}
+          />
         </div>
 
         <input type={"submit"} value={"Register"} />

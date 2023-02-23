@@ -110,3 +110,11 @@ Lifecyle Phases in React :
 1. Mounting : First render with initial computations
 2. Updation : Every re render
 3. Unmounting : When component wipes out from the DOM
+-------------------------------------------------
+23 Feb 2023
+If there are multiple updater functions called for useState() variable, then the updates are batched*.
+* Updates are not batched everytime, it depends if they are used in promises
+
+Ways of binding : 
+Variable -> Input Field (1 Way binding)
+Variable <-> Input Field (2 Way binding)

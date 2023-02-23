@@ -8,6 +8,8 @@ import Header from "./components/Header/Header";
 import ToDoList from "./components/ToDoList/ToDoList";
 import Events from "./components/Events/Events";
 import Register from "./components/Register/Register";
+import UpdatingState from "./components/UpdatingState/UpdatingState";
+import Bindings from "./components/Bindings/Bindings";
 
 const App = () => {
   // const percent = 60;
@@ -33,7 +35,6 @@ const App = () => {
       {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
       <Heading percent={60}>Heading from Styled Component</Heading>
       <Heading2>{heading}</Heading2>
-      <Register />
       {/* <Events
         event={{
           hardware: "mouse",
@@ -43,6 +44,9 @@ const App = () => {
         name={"click"}
       /> */}
       {/* <ToDoList /> */}
+      {/* <Register /> */}
+      {/* <UpdatingState /> */}
+      <Bindings />
     </div>
   );
 };
