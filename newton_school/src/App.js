@@ -10,6 +10,8 @@ import Events from "./components/Events/Events";
 import Register from "./components/Register/Register";
 import UpdatingState from "./components/UpdatingState/UpdatingState";
 import Bindings from "./components/Bindings/Bindings";
+import Dashboard from "./components/24Feb/Dashboard/Dashboard";
+import ConUnConComponents from "./components/24Feb/ConUnConComponents/ConUnConComponents";
 
 const App = () => {
   // const percent = 60;
@@ -33,8 +35,8 @@ const App = () => {
     <div className="App">
       <Header />
       {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
-      <Heading percent={60}>Heading from Styled Component</Heading>
-      <Heading2>{heading}</Heading2>
+      {/* <Heading percent={60}>Heading from Styled Component</Heading> */}
+      {/* <Heading2>{heading}</Heading2> */}
       {/* <Events
         event={{
           hardware: "mouse",
@@ -46,7 +48,9 @@ const App = () => {
       {/* <ToDoList /> */}
       {/* <Register /> */}
       {/* <UpdatingState /> */}
-      <Bindings />
+      {/* <Bindings /> */}
+      {/* <Dashboard /> */}
+      <ConUnConComponents />
     </div>
   );
 };
