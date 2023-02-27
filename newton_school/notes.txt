@@ -118,3 +118,6 @@ If there are multiple updater functions called for useState() variable, then the
 Ways of binding : 
 Variable -> Input Field (1 Way binding)
 Variable <-> Input Field (2 Way binding)
+--------------------------------------------------
+27 Feb 2023
+Validator : https://www.npmjs.com/package/validator

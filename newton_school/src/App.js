@@ -12,6 +12,7 @@ import UpdatingState from "./components/UpdatingState/UpdatingState";
 import Bindings from "./components/Bindings/Bindings";
 import Dashboard from "./components/24Feb/Dashboard/Dashboard";
 import ConUnConComponents from "./components/24Feb/ConUnConComponents/ConUnConComponents";
+import FormValidation from "./components/27Feb/FormValidation/FormValidation";
 
 const App = () => {
   // const percent = 60;
@@ -50,7 +51,8 @@ const App = () => {
       {/* <UpdatingState /> */}
       {/* <Bindings /> */}
       {/* <Dashboard /> */}
-      <ConUnConComponents />
+      {/* <ConUnConComponents /> */}
+      <FormValidation />
     </div>
   );
 };
