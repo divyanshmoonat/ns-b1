@@ -13,7 +13,7 @@ import Bindings from "./components/Bindings/Bindings";
 import Dashboard from "./components/24Feb/Dashboard/Dashboard";
 import ConUnConComponents from "./components/24Feb/ConUnConComponents/ConUnConComponents";
 import FormValidation from "./components/27Feb/FormValidation/FormValidation";
-
+import CBC from "./components/28Feb/CBC";
 const App = () => {
   // const percent = 60;
 
@@ -52,7 +52,8 @@ const App = () => {
       {/* <Bindings /> */}
       {/* <Dashboard /> */}
       {/* <ConUnConComponents /> */}
-      <FormValidation />
+      {/* <FormValidation /> */}
+      <CBC />
     </div>
   );
 };

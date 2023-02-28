@@ -121,3 +121,26 @@ Variable <-> Input Field (2 Way binding)
 --------------------------------------------------
 27 Feb 2023
 Validator : https://www.npmjs.com/package/validator
+--------------------------------------------------
+28 Feb 2023
+
+Component Types : 
+1. Class based components : A JS class represents a react component (Old)
+2. Functional components : A JS function reprsents a react component (New)
+
+class A extends B {
+    constructor() {
+        // Initilize variables
+        this.color = "";
+        this.model = "";
+    }
+
+    sum() {
+
+    }
+
+    product() {
+
+    }
+}
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
