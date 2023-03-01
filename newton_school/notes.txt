@@ -144,3 +144,15 @@ class A extends B {
     }
 }
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+-------------------------------------------------------
+1 March 2023
+try {
+ // Code block where error might occur
+} catch (error) {
+ //
+}
+
+Index
+    App
+        ErrorBounday
+            Test
