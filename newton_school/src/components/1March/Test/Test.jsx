@@ -32,8 +32,11 @@ const Test = () => {
     // setTimeout(() => {
     //   setCounter(100);
     // }, 5000);
+    localStorage.setItem("lastLoggedInTime", "2 Mar 2023 21:20:00");
     console.log("Use Effect => Component did mount");
     return () => {
+      console.log("Unmounting Test component");
+      localStorage.removeItem("lastLoggedInTime");
       // componentWillUnmount()
     };
   }, []);

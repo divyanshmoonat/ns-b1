@@ -9,6 +9,7 @@ class ErrorBoundary extends React.Component {
     super();
     this.state = {
       error: null,
+      showTest: true,
     };
   }
 
@@ -19,6 +20,9 @@ class ErrorBoundary extends React.Component {
 
   componentDidMount() {
     console.log("Did mount called");
+    setTimeout(() => {
+      this.setState({ showTest: false });
+    }, 10000);
   }
 
   render() {
@@ -29,9 +33,7 @@ class ErrorBoundary extends React.Component {
     }
     return (
       <div className="error-boundary-container">
-        <div>
-          <Test />
-        </div>
+        <div>{this.state.showTest && <Test />}</div>
         <div>
           <TestCB />
         </div>

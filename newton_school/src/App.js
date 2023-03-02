@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
 import styled from "styled-components";
 
 import "./App.css";
@@ -15,32 +15,33 @@ import Header from "./components/Header/Header";
 // import FormValidation from "./components/27Feb/FormValidation/FormValidation";
 // import CBC from "./components/28Feb/CBC";
 import ErrorBoundary from "./components/1March/ErrorBoundary/ErrorBoundary";
+import Consumer from "./components/2March/Consumer/Consumer";
+import Footer from "./components/Footer/Footer";
+
+export const MyContext = createContext();
 
 const App = () => {
-  // const percent = 60;
+  const [state, setState] = useState({
+    version: "1.0.0",
+    themeName: "light",
+    appName: "NewtonSchool-App",
+  });
 
-  const Heading = styled.h1`
-    color: ${(props) => (props.percent > 50 ? "green" : "red")};
-    font-size: 25px;
-  `;
-
-  const Heading2 = styled.h1`
-    color: blue;
-  `;
-
-  const [heading, setHeading] = useState("");
-  const onHeadingChange = (value) => {
-    // Update heading state variable
-    setHeading(value);
+  const updateContext = (key, value) => {
+    setState({
+      ...state,
+      [key]: value,
+    });
   };
 
   return (
-    <div className="App">
-      <Header />
-      {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
-      {/* <Heading percent={60}>Heading from Styled Component</Heading> */}
-      {/* <Heading2>{heading}</Heading2> */}
-      {/* <Events
+    <MyContext.Provider value={{ ...state, updateContext }}>
+      <div className={`App ${state.themeName === "dark" ? "dark" : ""}`}>
+        <Header />
+        {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
+        {/* <Heading percent={60}>Heading from Styled Component</Heading> */}
+        {/* <Heading2>{heading}</Heading2> */}
+        {/* <Events
         event={{
           hardware: "mouse",
           type: "click",
@@ -48,16 +49,19 @@ const App = () => {
         onHeadingChange={onHeadingChange}
         name={"click"}
       /> */}
-      {/* <ToDoList /> */}
-      {/* <Register /> */}
-      {/* <UpdatingState /> */}
-      {/* <Bindings /> */}
-      {/* <Dashboard /> */}
-      {/* <ConUnConComponents /> */}
-      {/* <FormValidation /> */}
-      {/* <CBC /> */}
-      <ErrorBoundary />
-    </div>
+        {/* <ToDoList /> */}
+        {/* <Register /> */}
+        {/* <UpdatingState /> */}
+        {/* <Bindings /> */}
+        {/* <Dashboard /> */}
+        {/* <ConUnConComponents /> */}
+        {/* <FormValidation /> */}
+        {/* <CBC /> */}
+        {/* <ErrorBoundary /> */}
+        <Consumer />
+        <Footer />
+      </div>
+    </MyContext.Provider>
   );
 };
 

@@ -156,3 +156,24 @@ Index
     App
         ErrorBounday
             Test
+-------------------------------------------------------
+2 March 2023
+
+App
+    ErrorBounday
+        Test
+        CBC
+
+
+E-Comm
+App
+    Header
+    ErrorBoundary
+        HomePage
+            Categories
+                Cards
+        Cart
+            Products
+        Checkout
+            CostCalculator
+    Footer
