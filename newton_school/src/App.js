@@ -17,26 +17,13 @@ import Header from "./components/Header/Header";
 import ErrorBoundary from "./components/1March/ErrorBoundary/ErrorBoundary";
 import Consumer from "./components/2March/Consumer/Consumer";
 import Footer from "./components/Footer/Footer";
-
-export const MyContext = createContext();
+import MyContextProvider from "./contexts/MyContext";
+import ReducerExample from "./components/3March/ReducerExample";
 
 const App = () => {
-  const [state, setState] = useState({
-    version: "1.0.0",
-    themeName: "light",
-    appName: "NewtonSchool-App",
-  });
-
-  const updateContext = (key, value) => {
-    setState({
-      ...state,
-      [key]: value,
-    });
-  };
-
   return (
-    <MyContext.Provider value={{ ...state, updateContext }}>
-      <div className={`App ${state.themeName === "dark" ? "dark" : ""}`}>
+    <MyContextProvider>
+      <div className={`App`}>
         <Header />
         {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
         {/* <Heading percent={60}>Heading from Styled Component</Heading> */}
@@ -58,10 +45,11 @@ const App = () => {
         {/* <FormValidation /> */}
         {/* <CBC /> */}
         {/* <ErrorBoundary /> */}
-        <Consumer />
+        {/* <Consumer /> */}
+        <ReducerExample />
         <Footer />
       </div>
-    </MyContext.Provider>
+    </MyContextProvider>
   );
 };
 

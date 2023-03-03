@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { MyContext } from "../../../App";
+import { MyContext } from "../../../contexts/MyContext";
 
 import "./ChildConsumer.css";
 
 const ChildConsumer = () => {
   const myContext = useContext(MyContext);
-  console.log(myContext);
+  // console.log(myContext);
 
   const onThemeChange = () => {
     if (myContext.themeName === "light") {

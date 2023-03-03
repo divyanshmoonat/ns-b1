@@ -177,3 +177,6 @@ App
         Checkout
             CostCalculator
     Footer
+-------------------------------------------------
+3 March 2023
+Reducer : Pure functions
