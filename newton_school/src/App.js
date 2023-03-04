@@ -19,6 +19,7 @@ import Consumer from "./components/2March/Consumer/Consumer";
 import Footer from "./components/Footer/Footer";
 import MyContextProvider from "./contexts/MyContext";
 import ReducerExample from "./components/3March/ReducerExample";
+import HForm from "./components/4March/HForm";
 
 const App = () => {
   return (
@@ -46,7 +47,8 @@ const App = () => {
         {/* <CBC /> */}
         {/* <ErrorBoundary /> */}
         {/* <Consumer /> */}
-        <ReducerExample />
+        {/* <ReducerExample /> */}
+        <HForm />
         <Footer />
       </div>
     </MyContextProvider>

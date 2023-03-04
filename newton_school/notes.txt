@@ -180,3 +180,15 @@ App
 -------------------------------------------------
 3 March 2023
 Reducer : Pure functions
+-------------------------------------------------
+4 March 2023
+
+// Syntax : arrayName.reduce(reducerFn,initialValue);
+const prices = [100,150,99,149];
+const sumReducer = (accumulator,currentValue) => currentValue+accumulator;
+const sum = prices.reduce(sumReducer,0);
+
+let sum = 0; // initalValue of sum is 0
+for(let i =0;i<prices.length;i++) {
+    sum = sum + prices[i]
+}

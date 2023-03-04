@@ -5,6 +5,7 @@ const initialCounter = 0;
 
 const ReducerExample = () => {
   // useReducer implementation
+  // reducerFn : It is a function which contains all the ways to update a single variable
   const counterReducer = (counter, action) => {
     switch (action) {
       case "INCREASE":
