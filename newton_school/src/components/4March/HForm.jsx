@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useInput from "../../hooks/useInput";
+import Container from "../Container/Container";
 import "./HForm.css";
 
 const HForm = () => {
@@ -18,24 +19,26 @@ const HForm = () => {
   };
 
   return (
-    <form onSubmit={onFormSubmit}>
-      <div>
-        <label htmlFor="name">Name</label>
-        <input {...bindName} type={"text"} id="name" />
-      </div>
+    <Container>
+      <form onSubmit={onFormSubmit}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input {...bindName} type={"text"} id="name" />
+        </div>
 
-      <div>
-        <label htmlFor="email">Email</label>
-        <input {...bindEmail} type={"text"} id="email" />
-      </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input {...bindEmail} type={"text"} id="email" />
+        </div>
 
-      <div>
-        <label htmlFor="address">Address</label>
-        <input {...bindAddress} type={"text"} id="address" />
-      </div>
+        <div>
+          <label htmlFor="address">Address</label>
+          <input {...bindAddress} type={"text"} id="address" />
+        </div>
 
-      <input type={"submit"} value="Submit" />
-    </form>
+        <input type={"submit"} value="Submit" />
+      </form>
+    </Container>
   );
 };
 export default HForm;

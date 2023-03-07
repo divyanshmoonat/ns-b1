@@ -1,0 +1,10 @@
+.component-wrapper {
+  margin-left: 20px;
+  /* border: 1px solid black; */
+}
+
+@media only screen and (max-width: 450px) {
+    .component-wrapper {
+        margin-left: 10px;
+    }
+}

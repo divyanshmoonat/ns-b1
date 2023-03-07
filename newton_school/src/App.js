@@ -20,6 +20,7 @@ import Footer from "./components/Footer/Footer";
 import MyContextProvider from "./contexts/MyContext";
 import ReducerExample from "./components/3March/ReducerExample";
 import HForm from "./components/4March/HForm";
+import Fragment from "./components/6March/Fragment";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
         {/* <Consumer /> */}
         {/* <ReducerExample /> */}
         <HForm />
+        <Fragment />
         <Footer />
       </div>
     </MyContextProvider>
