@@ -1,0 +1,14 @@
+.user-card {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+
+  box-shadow:  1px 0px 5px grey;
+  margin: 20px;
+}
+
+.user-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
