@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -27,11 +28,9 @@ const Header = () => {
       <header>
         <nav className="site-nav">
           <div>
-            <a style={aStyles} href="#">
-              Home
-            </a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <Link to={"/"}>Home</Link>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </div>
           <div>
             {isLoggedIn ? (

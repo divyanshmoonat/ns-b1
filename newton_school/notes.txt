@@ -192,3 +192,13 @@ let sum = 0; // initalValue of sum is 0
 for(let i =0;i<prices.length;i++) {
     sum = sum + prices[i]
 }
+---------------------------------------------------
+10 March 2023
+/api/users-list => 50000
+/api/users-list?pageNo=1&pageSize=10 => 0-10
+/api/users-list?pageNo=2&pageSize=10 => 11-20
+/api/users-list?pageNo=3&pageSize=10 => 21-30
+
+
+Absolute URL : http://localhost:3000/contact-us
+Relative URL : /contact-us

@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import "./App.css";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 // import Greet from "./components/Greet/Greet";
 // import ToDoList from "./components/ToDoList/ToDoList";
@@ -24,12 +26,31 @@ import Fragment from "./components/6March/Fragment";
 import ForwardRefContainer from "./components/9March/ForwardRefContainer";
 // import UsersList from "./components/9March/UsersList/UsersList";
 import UsersListC from "./components/9March/UsersList/UsersListC";
+import CreatePost from "./components/10March/CreatePost/CreatePost";
+import AboutUs from "./containers/AboutUs/AboutUs";
+import ContactUs from "./containers/ContactUs/ContactUs";
+import Home from "./containers/Home/Home";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs />,
+  },
+  {
+    path: "/contact-us",
+    element: <ContactUs />,
+  },
+]);
 
 const App = () => {
   return (
     <MyContextProvider>
       <div className={`App`}>
-        <Header />
+        {/* <Header /> */}
         {/* <h1 style={{ color: "aqua", fontSize: "50px" }}>My ReactJS Website</h1> */}
         {/* <Heading percent={60}>Heading from Styled Component</Heading> */}
         {/* <Heading2>{heading}</Heading2> */}
@@ -56,7 +77,9 @@ const App = () => {
         <Fragment /> */}
         {/* <ForwardRefContainer /> */}
         {/* <UsersList /> */}
-        <UsersListC />
+        {/* <UsersListC /> */}
+        {/* <CreatePost /> */}
+        <RouterProvider router={routes} />
         <Footer />
       </div>
     </MyContextProvider>

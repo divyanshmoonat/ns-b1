@@ -5,20 +5,19 @@ import "./UsersList.css";
 
 const UsersList = () => {
   const [users, setUsers] = useState([]);
-
+  const [pageNo, setPageNo] = useState(1);
+  const getUsers = async () => {
+    try {
+      const response = await axios.get(
+        "https://jsonplaceholder.typicode.com/users?pageNo=" + pageNo
+      );
+      console.log(response.data);
+      setUsers(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   useEffect(() => {
-    const getUsers = async () => {
-      try {
-        const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/users"
-        );
-        console.log(response.data);
-        setUsers(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
     getUsers();
 
     // axios
@@ -30,7 +29,7 @@ const UsersList = () => {
     //   .catch((error) => {
     //     console.error(error);
     //   });
-  }, []);
+  }, [pageNo]);
 
   return (
     <>
