@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./UserCard.css";
 
 const UserCard = (props) => {
@@ -8,7 +9,7 @@ const UserCard = (props) => {
         src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png"
         alt="User Picture"
       />
-      <h4>{props.name}</h4>
+      <Link to={"/user/" + props.id}>{props.name}</Link>
       <h5>{props.email}</h5>
       <h5>{props.phone}</h5>
     </div>

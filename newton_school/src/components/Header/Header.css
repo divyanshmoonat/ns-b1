@@ -4,5 +4,13 @@
 }
 
 .site-nav a {
-  margin: 0px 20px;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+a.active {
+  border-bottom: 5px solid blue;
 }

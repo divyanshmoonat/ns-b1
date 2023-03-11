@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -14,10 +14,11 @@ const Header = () => {
   if (isLoggedIn) {
     return (
       <header>
-        <nav className={"site-nav"}>
-          <a href="#">Dashboard</a>
-          <a href="#">Revenue Report</a>
-          <a href="#">Status Report</a>
+        <nav className={"site-nav navbar"}>
+          <NavLink to="/users-list">Users List</NavLink>
+          <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink to="/revenue-report">Revenue Report</NavLink>
+          <NavLink to="/status-report">Status Report</NavLink>
         </nav>
       </header>
     );
@@ -27,10 +28,31 @@ const Header = () => {
     return (
       <header>
         <nav className="site-nav">
-          <div>
-            <Link to={"/"}>Home</Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/contact-us">Contact Us</Link>
+          <div className="navbar">
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+              to={"/"}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+              to="/about-us"
+            >
+              About Us
+            </NavLink>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+              to="/contact-us"
+            >
+              Contact Us
+            </NavLink>
           </div>
           <div>
             {isLoggedIn ? (
