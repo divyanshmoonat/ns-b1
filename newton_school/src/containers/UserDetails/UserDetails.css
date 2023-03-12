@@ -1,0 +1,18 @@
+.user-details h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+.user-details .user-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-details .user-items-container > a {
+  margin: 20px;
+  /* border: 2px solid black; */
+  padding: 20px;
+}

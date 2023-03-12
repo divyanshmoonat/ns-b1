@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import UserCard from "../UserCard/UserCard";
 import "./UsersList.css";
+import { Link } from "react-router-dom";
 
 const UsersList = () => {
   const [users, setUsers] = useState([]);

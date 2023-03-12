@@ -55,11 +55,12 @@ const Header = () => {
             </NavLink>
           </div>
           <div>
-            {isLoggedIn ? (
+            <Link to={"/login"}>Login</Link>
+            {/* {isLoggedIn ? (
               <button onClick={onBtnClickHandler}>Logout</button>
             ) : (
               <button onClick={onBtnClickHandler}>Login</button>
-            )}
+            )} */}
           </div>
         </nav>
       </header>
